@@ -15,9 +15,7 @@ class Main extends Component {
   constructor(props) {
     super(props);
     this.state = { currentScreen: "Splash" };
-    console.log("Mudar após 3 segundos");
     setTimeout(() => {
-      console.log("3 segundos");
       this.setState({ currentScreen: "Login" });
     }, 3000);
   }

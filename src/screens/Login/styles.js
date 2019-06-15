@@ -5,12 +5,12 @@ const { width: WIDTH } = Dimensions.get("window");
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    alignItems: "center",
     backgroundColor: "#E5E5E5"
   },
   logoContainer: {
     marginTop: 120,
-    marginBottom: 60
+    marginBottom: 60,
+    alignSelf: "center"
   },
   input: {
     width: WIDTH - 55,
@@ -23,12 +23,12 @@ const styles = StyleSheet.create({
   },
   inputIcon: {
     position: "absolute",
-    top: 13,
+    top: 15,
     left: 37
   },
   btnEye: {
     position: "absolute",
-    top: 13,
+    top: 15,
     right: 37
   },
   btnLogin: {
@@ -38,7 +38,8 @@ const styles = StyleSheet.create({
     backgroundColor: "#8C0000",
     justifyContent: "center",
     marginTop: 20,
-    borderRadius: 8
+    borderRadius: 8,
+    alignSelf: "center"
   },
   txt: {
     color: "#fff",
@@ -49,26 +50,36 @@ const styles = StyleSheet.create({
   cadastrese: {
     color: "#8C0000",
     marginTop: 15,
-    marginRight: 15
+    marginRight: 15,
+    fontSize: 16
   },
   orcamento: {
     color: "#8C0000",
     marginTop: 15,
-    marginLeft: 15
+    marginLeft: 15,
+    fontSize: 16
   },
   containerAdicionais: {
-    flexDirection: "row"
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "center",
+    fontSize: 16
   },
-  containerSociais: {
-    flexDirection: "row"
+  linha: {
+    width: WIDTH - 55,
+    alignSelf: "center"
   },
-  instagram: {
-    marginTop: 50,
-    marginLeft: 15
+  recuperarsenha: {
+    fontSize: 16,
+    color: "#8C0000",
+    marginTop: 15,
+    alignSelf: "flex-end",
+    marginRight: 32
   },
-  facebook: {
-    marginTop: 50,
-    marginRight: 15
+  txtReserved: {
+    marginTop: 25,
+    alignSelf: "center",
+    color: "#999999"
   }
 });
 

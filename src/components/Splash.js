@@ -4,7 +4,7 @@ import { View, Text, StyleSheet, Image } from "react-native";
 export default class Splash extends Component {
   constructor(props) {
     super(props);
-    this.state = { timer: "Carregando..." };
+    this.state = { timer: null };
     setInterval(() => {
       this.setState({ timer: this.state.timer });
     }, 1000);
@@ -13,7 +13,6 @@ export default class Splash extends Component {
     return (
       <View style={styles.container}>
         <Image source={require("../assets/img/logo.png")} />
-        <Text style={styles.txt}>{`${this.state.timer}`}</Text>
       </View>
     );
   }
